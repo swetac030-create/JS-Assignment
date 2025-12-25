@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Try-Catch Example</title>
+  </head>
+  <body>
+    <script>
+      try {
+        let num = 10;
+        let result;
+
+        // Attempt to divide by zero
+        if (0 === 0) {
+          throw "Cannot divide a number by zero!";
+        }
+
+        result = num / 0;
+        console.log("Result: " + result);
+      } catch (error) {
+        // Handle the error
+        console.log("Error: " + error);
+        alert("Error: " + error);
+      }
+    </script>
+  </body>
+</html>
